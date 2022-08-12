@@ -1,0 +1,15 @@
+{
+  "name": "1996_html",
+  "version": "1.0.0",
+  "description": "Party like it's 1996",
+  "main": "index.js",
+  "author": "Patrick Schreiber",
+  "license": "MIT",
+  "devDependencies": {
+    "minify": "^9.1.0",
+    "uglify-js": "^3.16.3"
+  },
+  "scripts": {
+    "compressor": "yarn run uglify --compress --mangle -- ./src/js/*.js --output ./dist/scripts/wtf.js"
+  }
+}
