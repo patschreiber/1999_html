@@ -2,18 +2,29 @@
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
+    "allowJs": false,                                  /* Allow JavaScript files to be a part of your program. Use the 'checkJS' option to get errors from these files. */
     "skipLibCheck": true,
-    "strict": true,
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
     "moduleResolution": "node",
+    "allowUnusedLabels": false,                       /* Disable error reporting for unused labels. */
+    "allowUnreachableCode": false,                    /* Disable error reporting for unreachable code. */
+    "strict": true,                                   /* Enable all strict type-checking options. */
+    "noImplicitAny": true,                            /* Enable error reporting for expressions and declarations with an implied 'any' type. */
+    "strictNullChecks": true,                         /* When type checking, take into account 'null' and 'undefined'. */
+    "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
+    "strictPropertyInitialization": true,             /* Check for class properties that are declared but not set in the constructor. */
+    "noImplicitThis": true,                           /* Enable error reporting when 'this' is given the type 'any'. */
+    "alwaysStrict": true,                             /* Ensure 'use strict' is always emitted. */
+    "noUnusedLocals": true,                           /* Enable error reporting when local variables aren't read. */
+    "noImplicitReturns": true,                        /* Enable error reporting for codepaths that do not explicitly return in a function. */
+    "noUnusedParameters": true,                       /* Raise an error when a function parameter isn't read. */
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
-    "incremental": true,
+    "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */
     "paths": {
       "@/*": ["./src/*"]
     }
