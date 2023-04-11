@@ -1,12 +1,15 @@
 {
   "name": "party_like_its_1999",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn version --minor && next build",
+    "build dev": "yarn version --prerelease --no-commit-hooks --no-git-tag-version && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "upgradable": "yarn outdated && yarn upgrade-interactive",
+    "licenses": "yarn licenses generate-disclaimer"
   },
   "dependencies": {
     "@types/node": "18.15.11",
