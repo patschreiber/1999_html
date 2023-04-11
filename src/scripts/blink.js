@@ -1,8 +1,13 @@
-// Welcome back, friend.
+/**
+* This shims the <blink> tag back into existence. Welcome back, friend.
+*
+* According to the HTML spec the visibile time is longer than the hidden time,
+* so we take that into account.
+*/
 
 // Wait you can use a "+"?
 +function () {
-  const blinkers = document.getElementsByTagName('blink');\
+  const blinkers = document.getElementsByTagName('blink');
   var toggle = true;
 
   // Original implementation had the blinking element visible for 750 ms. and
