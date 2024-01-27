@@ -6,10 +6,14 @@
   "author": "Patrick Schreiber",
   "license": "MIT",
   "devDependencies": {
-    "minify": "^9.1.0",
-    "uglify-js": "^3.16.3"
+    "ejs": "^3.1.9",
+    "minify": "^11.0.1",
+    "uglify-js": "^3.17.4"
   },
   "scripts": {
+    "build-dev": "yarn version --prerelease --no-commit-hooks --no-git-tag-version",
+    "build-licenses": "yarn licenses generate-disclaimer > LICENSES.txt",
+    "upgrade-all-dependencies": "yarn upgrade-interactive --latest",
     "compressor": "yarn run uglify --compress --mangle -- ./src/js/*.js --output ./dist/scripts/wtf.js"
   }
 }
