@@ -1,0 +1,47 @@
+p,
+h1,h2,h3,h4,h5,h6,
+blink {
+    color: white;
+}
+marquee {
+    color: aqua;
+}
+
+
+/* Links */
+a {
+  color: burlywood;
+  text-decoration: underline;
+}
+a:visited {
+  color: darkorchid;
+}
+a:hover {
+  color: cornflowerblue; /* Can we go with the uhh... */
+}
+
+a.artist-link.applemusic {
+  color: orangered;
+}
+a.artist-link.itunes {
+  color: mediumslateblue;
+}
+a.artist-link.bandcamp {
+  color: lightblue;
+}
+a.artist-link.facebook {
+  color: cornflowerblue;
+}
+a.artist-link.instagram {
+  color: fuchsia;
+}
+a.artist-link.spotify {
+  color: green;
+}
+a.artist-link.youtube {
+  color: red;
+}
+
+.artist-links > h1 {
+  font-family: sans-serif;
+}

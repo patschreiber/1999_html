@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <title>Party like it's 1996</title>
+        <meta charset="utf-8">
+        <style>
+            p {
+                color: white;
+            }
+            marquee {
+                color: aqua;
+            }
+        </style>
+    </head>
+
+    <body bgcolor="tan" background="starry_eyed_surprise.GIF">
+        <table align="center" cellspacing="10">
+            <tbody>
+                <tr>
+                    <td>
+                        <p >If you'd like to return to 2022, <a id="normcore-mode" href="#" title="normcore mode">click here for a more minimal experience.</a></p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    <table border="1">
+        <thead>
+            <th colspan="2">
+                <h1 style="color: red;"><span><img src="logo.JPEG" width="42" height="42"></span>Welcome to Mouth Sounds Records!</h1>
+                <marquee>Find the new releases below. We hope you'll find some really cool stuff here. Thanks for stopping by!!!</marquee>
+                <p><span class="blink-shim">BUY NOW</span></p>
+            </th>
+        </thead>
+        <tbody>
+            <td>
+                Stuff I think is Cool
+                <ul>
+                    <li><a href="#">New Releases</a></li>
+                    <li><a href="#">Free Stuff</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </td>
+            <td>
+                <h1>Your header here</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </td>
+
+        </tbody>
+    </table>
+    <p>
+        VISITOR COUNT: 99901 (look into how these counters worked. Probs when page resolves, store num+1 in db)
+    </p>
+    <a href="/guestbook.html">Sign the guestbook!</a>
+
+    <script type="text/javascript">
+        // Make Visitor count increment every sec
+        // shim blink and marquee tag
+        +function() {
+
+            console.log("skudhfj")
+            const blinkers = document.getElementsByClassName('blink-shim');
+
+            console.log(blinkers)
+
+
+            var toggle = true;
+            setInterval(function() {
+                toggle = !toggle;
+
+                for (var i=0; i<blinkers.length; i++) {
+                    console.log(blinkers[i]);
+                    toggle === true ? blinkers[i].setAttribute("style", "visibility: visible;") : blinkers[i].setAttribute("style", "visibility: hidden;");
+                }
+            }, 500);
+        }();
+    </script>
+    </body>
+</html>
